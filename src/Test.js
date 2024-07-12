@@ -27,6 +27,7 @@ function Counter({children}) {
 
 export default function Test() {
   return <Counter>
+    {/* this is the optimization trick by using child prop */}
    <SlowComponent/>
   </Counter>;
 }
